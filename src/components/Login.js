@@ -26,7 +26,7 @@ const Login = () => {
 
   const onSuccess = (res) => {
     localStorage.setItem("user", JSON.stringify(res.profileObj));
-    const { name, imageUrl, googleId } = res.profileObj;
+    const { name, imageUrl, googleId } = res.profileObj
   };
   const onFailure = (err) => {
     console.log("failed:", err);
